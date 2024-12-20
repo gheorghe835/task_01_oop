@@ -15,5 +15,14 @@ public class Produs {
         this.price = price;
         this.stock = stock;
     }
+    public void upStock(int quantity){
+        if (quantity>0) {
+            stock += quantity;
+            System.out.println("  Stocul a fost cresut cu " + quantity + ". Stocul actual: " + stock);
+        }
+        else{
+            System.out.println("  Cantitatea trebuie sa depaseasca 0.");
+        }
+    }
    
 }
