@@ -15,10 +15,24 @@ public class Produs {
         this.price = price;
         this.stock = stock;
     }
+    //Metoda de crestere a stocului
     public void upStock(int quantity){
         if (quantity>0) {
             stock += quantity;
             System.out.println("  Stocul a fost cresut cu " + quantity + ". Stocul actual: " + stock);
+        }
+        else{
+            System.out.println("  Cantitatea trebuie sa depaseasca 0.");
+        }
+    }
+    //Metoda de scarerea a stocului
+    public void downStock(int quantity){
+        if (quantity>0 & quantity<=stock) {
+            stock -= quantity;
+            System.out.println("  Stocul a scazut cu " + quantity + ". Stocul actual: " + stock);            
+        }
+        else if (quantity>stock) {
+            System.out.println("  Soc insuficient. Stoc actual: " + stock);
         }
         else{
             System.out.println("  Cantitatea trebuie sa depaseasca 0.");
