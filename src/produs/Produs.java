@@ -41,7 +41,7 @@ public class Produs {
     //Metoda de aplicare a discountului
     public void addDiscount(double procent){
         if(procent>0 & procent<=100){
-            procent -= price*(procent/100);
+            price -= price*(procent/100);
             System.out.println("  Discount de " + procent + " % a fost aplicat. Pret actual: " + price);
         }
         else{
