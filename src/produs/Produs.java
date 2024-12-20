@@ -38,5 +38,15 @@ public class Produs {
             System.out.println("  Cantitatea trebuie sa depaseasca 0.");
         }
     }
+    //Metoda de aplicare a discountului
+    public void addDiscount(double procent){
+        if(procent>0 & procent<=100){
+            procent -= price*(procent/100);
+            System.out.println("  Discount de " + procent + " % a fost aplicat. Pret actual: " + price);
+        }
+        else{
+            System.out.println("  Procentul trebuie sa fie intre 0 si 100.");
+        }
+    }
    
 }
