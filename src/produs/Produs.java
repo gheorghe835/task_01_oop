@@ -48,5 +48,9 @@ public class Produs {
             System.out.println("  Procentul trebuie sa fie intre 0 si 100.");
         }
     }
+    //Metoda de afisare a produsului
+    public void showDetails(){
+        System.out.println("  Produsul: " + name + ". Pretul: " + price + ". Stocul: " + stock);
+    }
    
 }
