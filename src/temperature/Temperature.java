@@ -1,5 +1,8 @@
 package temperature;
 
+/*Creează o clasă Temperatura care conține un atribut: valoare (double).
+Adaugă metode pentru a converti temperatura din Celsius în Fahrenheit și invers. */
+
 public class Temperature { 
     private double value;
     public Temperature(double value){
